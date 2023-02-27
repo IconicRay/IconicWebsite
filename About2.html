@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="/style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <script src="/functionality.js>"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <p class="logo">
+                    <a href="Home.html">
+                        <img alt="IconicRay" src="images/logo.png" width="100" height="100">
+                        </a>
+                    </p>
+        <ul>
+            
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About2.html">About Us</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+            </nav>
+        </header>
+        <main id="aboutmain"> 
+            <section class="aboutsection">
+        <div class="aboutrow">        
+        <div class="aboutcol1">
+             <img src="images/about me.jpg" height="300px">
+        </div>
+        <div class="aboutcol2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hoi! I am Varshit Sharan studying in 7A of OIS CVR!</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Name')">Name</p>
+                <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+            </div>
+            <div class="tab-contents active-tab" id="Name">
+                <ul>
+                    <li><span>Name:</span> Varshit Sharan</li>
+                    <li><span>Grade:</span> 7A</li>
+                    <li><span>Roll:</span> 28</li>
+                </ul>
+                </div>
+                    <div class="tab-contents" id="Hobbies">
+                <ul>
+                    <li><span>Skills:</span> Sketching, Gaming, Editing, Writing Stories</li>
+                    <li><span>Passions:</span> Sketching, Cycling, Playing Keyboard</li>
+                </ul>
+            </div>
+        </div>
+        </section>
+        </main>
+        <footer class="copyright">
+            <center>Copyright &copy; This is made by Varshit with <i class="fa-sharp fa-solid fa-heart"></i> from Orchids the International School
+           </footer>
+        
+           <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname)
+{
+ for(tablink of tablinks)
+ {
+     tablink.classList.remove("active-link");
+ }
+
+ for(tabcontent of tabcontents)
+ {
+     tabcontent.classList.remove("active-tab");
+
+ }
+ event.currentTarget.classList.add("active-link");
+ document.getElementById(tabname).classList.add("active-tab");
+} 
+     </script>
+        </body>
+        </html>
