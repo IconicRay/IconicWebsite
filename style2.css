@@ -304,6 +304,12 @@ nav ul li a:hover::after{
   color: rgb(14, 125, 170);
   transform: translateY(-5px);
 }
+.alert{
+   display:block;
+}
+.alert:hover{ 
+   display:flex;
+}
 /*----------------------------------------------------Home----------------------------------------------------------------*/
 .row-home{
    padding: 25px 15%;

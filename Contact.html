@@ -40,22 +40,25 @@
                     </div>
                     </div>
             <div class="contact-right">
-                <h3 class="alert">Ask any queries here</h3>
+                <div class="alert">Ask any queries here</div>
                 <form id="contactForm">
-                    <input type="text" name="name" placeholder="Your Name Here Please!" required> <br><br>
-                    <input type="email" name="email" placeholder="Your Email Here Please!" required> <br> <br>
-                    <textarea name="message" rows="10" placeholder="Your Message Here Please!"></textarea> <br>
+                    <input id="nameField" type="text" name="name" placeholder="Your Name Here Please!" required> <br><br>
+                    <input id="emailField" type="email" name="email" placeholder="Your Email Here Please!" required> <br> <br>
+                    <textarea id="msgField" name="message" rows="10" placeholder="Your Message Here Please!"></textarea> <br>
                     <button type="Submit">Submit</button>
                 </form>
             </div>
         </section>
     </main>
     <footer class="copyright">
-        <center>Copyright &copy; This is made by Varshit with <i class="fa-sharp fa-solid fa-heart"></i> from Orchids the International School
+        Copyright &copy; This is made by Varshit with <i class="fa-sharp fa-solid fa-heart"></i> from Orchids the International School
     </footer>
+    <script src="/functionality.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
     <script>
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = 
+    var firebaseConfig = 
     {
         apiKey: "AIzaSyANC2pYkZDd_a3PMJHS9qxxWV-XiFmd06E",
         authDomain: "myproject-f6927.firebaseapp.com",
@@ -68,16 +71,6 @@
     };
     firebase.initializeApp(firebaseConfig);
     </script>
-    <script>
-        function onclick(Submit) {
-        var msg = "Thank you for your message! We appreciate your feedback and we will get back to you soon!";
-   alert (msg);
-        };
-    </script>
-
-<script src="functionality.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
 
 </body>
 </html>

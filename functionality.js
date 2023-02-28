@@ -17,5 +17,5 @@ form.addEventListener('submit', function(e) {
 
     form.reset();
 
-   function alert (message = "Thank you for your message! We appreciate your feedback and we will get back to you soon!");
+   alert (message = "Thank you for your message! We appreciate your feedback and we will get back to you soon!");
 });
